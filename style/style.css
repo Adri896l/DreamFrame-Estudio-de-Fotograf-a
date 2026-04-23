@@ -1,226 +1,56 @@
-* { 
-  margin: 0; 
-  padding: 0; 
-}
+html {
+    height: 100%;
+    width: 100%;
+  }
 
 body {
-    background-color: #E3DADD; 
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
+    background-color: #E3DADD;
     color: #534136;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*Menú navegación*/
-.nav-container {
-    position: sticky;
-    top: 0;
-    background-color: rgba(227, 218, 221, 0.95); /* Semi-transparente */
-    border-bottom: 2px solid #B7A0A7; 
-    z-index: 1000;
-    padding: 20px 0;
+.custom-nav {
+    background-color: rgba(227, 218, 221, 0.95);
+    border-bottom: 2px solid #B7A0A7;
 }
 
-.nav-container ul {
-    display: flex;
-    justify-content: center; 
-    gap: 60px;
-    list-style: none;
-}
-
-.nav-item a {
+.nav-link {
     color: #726756;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: 400;
-    font-size: 0.90rem;
+    letter-spacing: 2px;
 }
 
-.nav-item a:hover {
+.nav-link:hover {
     color: #A2747B;
 }
 
-/*Estilos del index*/
-
 h1 {
-    text-align: center;
-    color: #534136;
-    font-size: 2.2rem;
-    font-weight: 300; 
-    margin: 70px 0 10px 0;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 .subtitle {
-  color: #B7A0A7;
-  text-align: center;
-  margin-top: 25px;
-  font-size: 1.1rem;
+    color: #B7A0A7;
 }
 
-.blog-content { 
-  padding: 60px 10%; 
-}
-
-.gallery-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10%;
-    margin-bottom: 50px;
-    gap: 40px;
-}
-
-.reverse { 
-  flex-direction: row-reverse;
-   background-color: #f0ebe0;  
-}
-
-.text {
-    flex: 1;
-    max-width: 500px;
-}
-
-.text h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #A2747B; 
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-.text p {
-    font-size: 1rem;
-    color: #726756;
-    font-weight: 300;
-}
-
-.visual img {
-    max-width: 100%;
-    height: 500px;
-    border-radius: 2px; 
-    box-shadow: 15px 15px 0px -5px #B7A0A7; 
-}
-
-.blog-grid, .about-grid {
-    display: flex;
-    margin-top: 100px;
-    gap: 30px;
-}
-
-.blog-card {
-    background: #E3DADD; 
+.custom-card {
+    background-color: #E3DADD;
     border: 1px solid #B7A0A7;
 }
 
-.blog-card img, .about-card img { 
-  width: 100%; 
-  height: 200px; 
-  object-fit: cover; 
+.shadow-custom {
+    box-shadow: 15px 15px 0px -5px #B7A0A7;
 }
 
-.card-content { 
-  padding: 20px; 
+aside .bg-light {
+    background-color: #f0ebe0 !important;
 }
 
-.card-content span { 
-  font-size: 0.8rem; 
-  color: #A2747B; 
-}
-
-.card-content h3, .about-content h3 { 
-  margin: 10px 0; 
-  font-size: 1.2rem; 
-}
-
-.read-more { 
-  color: #534136; 
-  font-weight: bold; 
-  text-decoration: none; 
-  font-size: 0.9rem; 
-}
-
-/*Estilos about*/
-.about-content {
-  padding: 30px 10%;
-}
-
-.about-card {
-  background-color: #f0ebe0; 
-  box-shadow: 15px 15px 0px -5px #B7A0A7;
-}
-
-
-/*Estilos contact*/
-.contacto-container {
-    padding: 80px 10%;
-    background-color: #E3DADD; 
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form {
-    background-color: #fcfafb; 
-    padding: 40px;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 10px 10px 0px #B7A0A7; 
-    border: 1px solid #B7A0A7;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    color: #534136;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+aside h6 {
+    color: #A2747B;
     letter-spacing: 1px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 25px;
-    border: 1px solid #726756;
-    background-color: transparent;
-    font-size: 1rem;
-}
-
-.contact-form textarea {
-    height: 120px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 15px;
-    background-color: #A2747B; 
-    color: #E3DADD;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #534136; 
-}
-
-
-/*Sección footer*/
-
-footer {
+.custom-footer {
     background-color: #534136;
     color: #E3DADD;
-    text-align: center;
-    padding: 50px 20px;
-    margin-top: 100px;
-    letter-spacing: 1px;
-}
-
-footer p {
-    font-size: 1rem;
-    margin-bottom: 10px;
 }
