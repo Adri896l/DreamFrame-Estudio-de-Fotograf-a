@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>DreamFrame | Blog de Fotografía y Estudio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>DreamFrame | Conócenos</title>
 </head>
+
 <body>
 
-    <div class="nav-container">
-      <ul>
-        <li class="nav-item"><a href="index.html">INICIO</a></li>
-        <li class="nav-item"><a href="about.html">CONOCENOS</a></li>
-        <li class="nav-item"><a href="contact.html">CONTACTO</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg sticky-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">DreamFrame</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">CONÓCENOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACTO</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <main class="content">
-        <header class="hero-section">
-            <h1>¿Quiénes somos?</h1>
-            <p class="subtitle">Equipo #3 del Bootcamp de Generation México, un colectivo de 7 desarrolladores Java Full Stack Junior</p>
-        </header>
+  <header class="text-center py-5">
+    <h1 class="display-5">¿Quiénes somos?</h1>
+    <p class="subtitle">Equipo #3 del Bootcamp de Generation México, un colectivo de 7 desarrolladores Java Full Stack
+      Junior</p>
+  </header>
 
-        <section class="about-content">
-            <div class="about-grid">
-                <div class="about-card">
-                    <img src="assets/img/integrantes.jpg" alt="Equipo de trabajo">
-                    <div class="about-content">
-                        <h3>Equipo GitClub </h3>
-                        <p>Creemos que el código es el lente a través del cual construimos realidades digitales. Como estudiantes de Java Full Stack en Generation, 
-                            este blog representa nuestra capacidad de trabajar en equipo, entregando un producto funcional, estético y profesional 
-                            en un ciclo de Sprint.</p>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
 
-            <div class="about-grid">
-                <div class="about-card">
-                    <img src="assets/img/blog-cap.png" alt="Técnicas de luz">
-                    <div class="about-content">
-                        <h3>¿Por qué existe este sitio? </h3>
-                        <p>DreamFrame Studio nació como una simulación de proyecto real bajo la metodología SCRUM. 
-                        Nuestro objetivo es poner a prueba nuestra comprensión de la arquitectura web HTML y la identidad visual CSS3</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+      <aside class="col-md-2 d-none d-md-block">
+        <div class="p-3 bg-light border text-center h-100">
+          <h6>Publicidad</h6>
+          <div class="bg-secondary text-white p-4 mt-3">AD</div>
+        </div>
+      </aside>
 
-    <footer>
-        <p><b>Dream Frame Studio</b> | &copy; 2026</p>
-        <p>Autores: Equipo 3 | DreamFrame_121@gmail.com</p>
-    </footer>
+      <main class="col-md-8">
+
+        <div class="card mb-4 custom-card">
+          <img src="assets/img/integrantes.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Equipo GitClub</h5>
+            <p>
+              Creemos que el código es el lente a través del cual construimos realidades digitales.
+              Este blog representa nuestra capacidad de trabajar en equipo entregando un producto funcional.
+            </p>
+          </div>
+        </div>
+
+        <div class="card custom-card">
+          <img src="assets/img/blog-cap.png" class="card-img-top">
+          <div class="card-body">
+            <h5>¿Por qué existe este sitio?</h5>
+            <p>
+              DreamFrame Studio nació como una simulación de proyecto real bajo metodología SCRUM,
+              aplicando HTML, CSS y ahora Bootstrap.
+            </p>
+          </div>
+        </div>
+
+      </main>
+
+      <aside class="col-md-2 d-none d-md-block">
+        <div class="p-3 bg-light border h-100">
+          <h6 class="text-center">Noticias</h6>
+
+          <div class="mb-3">
+            <small class="text-muted">20 ABR</small>
+            <p class="mb-1">Nuevo sprint completado.</p>
+          </div>
+
+          <div class="mb-3">
+            <small class="text-muted">18 ABR</small>
+            <p class="mb-1">Mejoras en UI con Bootstrap.</p>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="text-center mt-5 p-4 custom-footer">
+    <p><b>Dream Frame Studio</b> | © 2026</p>
+    <p>Autores: Diana-dia@gmail.com | Adriana-adri@gmail.com | Israel-isra@gmail.com | Olaf-olaf@gmail.com |
+      Gustavo-gus@gmail.com | Carlos-car@gmail.com | Aron-aron@gmail.com</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
